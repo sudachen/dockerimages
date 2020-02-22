@@ -44,6 +44,7 @@ RUN bash -c "for i in {1..9}; do mkdir -p /usr/share/man/man\$i; done" \
     libgcc1 \
     libgomp1 \
     libstdc++6 \
+    xz-utils \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  && locale-gen en_US.UTF-8 \

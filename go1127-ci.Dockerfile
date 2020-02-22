@@ -9,6 +9,7 @@ RUN set -ex \
     mercurial \
     xvfb \
     parallel \
+    mingw-w64 \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
  && curl -L --retry 3 --output /usr/bin/jq https://circle-downloads.s3.amazonaws.com/circleci-images/cache/linux-amd64/jq-latest \
